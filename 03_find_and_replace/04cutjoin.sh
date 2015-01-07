@@ -17,9 +17,9 @@ echo ""
 # -1 -2 选项是指定按照哪一列合并
 # -t 指定分隔符 ,默认是空格
 
-join a1 a2
+join 04file1 04file2
 echo ""
-join a1 a3 -1 1 -2 2
+join 04file1 04file3 -1 1 -2 2
 
 
 
