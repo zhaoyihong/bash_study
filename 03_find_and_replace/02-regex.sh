@@ -51,6 +51,9 @@ grep '[[:digit:]]\{1,5\}' 02text
 echo "使用* 表示0个或者多个字符"
 echo "8后面0个或者多个9"
 grep "89*" 02text
+echo "BRE中没有+号，所以只能用\{1,\}来表示一个或者一个以上"
+grep 'a\{1,\}' 02text ''
+
 echo ""
 echo "*在首位，BRE中表示*原义，ERE中表示无意义"
 echo "BRE:中匹配到*abc"
@@ -81,3 +84,6 @@ grep -E '(why)+' 02text
 echo ""
 echo "单词边界"
 grep '\<abc\>' 02text
+
+
+
